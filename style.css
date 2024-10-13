@@ -141,10 +141,16 @@ p{
     width: 100%;
     padding: 10px;
     border-radius: 0.9rem;
+    border: none;
     margin-top: 6rem;
     color: #e8e8ed;
     font-weight: bold;
     text-transform: uppercase;
+    background-color: #243010;
+}
+
+.bottom button:hover{
+    background-color: rgba(36, 48, 16, 0.945);
 }
 
 .img-container{
