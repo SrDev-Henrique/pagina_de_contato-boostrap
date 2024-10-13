@@ -1,4 +1,5 @@
-nav{
+/* todo: Navegação */
+nav {
     padding: 16px 0;
     position: sticky;
     top: 0;
@@ -6,158 +7,112 @@ nav{
     z-index: 1;
 }
 
-.container .coll{
+.container .coll {
     font-size: 2rem;
     display: none;
 }
 
-nav > .container{
+nav>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-menu ul{
+.nav-menu ul {
     display: flex;
     gap: 10px;
 }
 
-.nav-menu ul li{
+.nav-menu ul li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     transition: 0.4s;
     color: #243010;
     font-weight: bold;
 }
 
-a:hover{
+a:hover {
     color: #445218;
 }
 
-.container-form{
+/* todo:Formulário de Contato */
+.container-form {
     height: 84vh;
 }
 
-.form{
+.form {
     display: flex;
     justify-content: space-between;
     height: 85%;
     margin-top: 5%;
 }
 
-.top h2,
-.top p{
-    margin-bottom: 1.2rem;
-    animation: 0.5s fadeUp forwards;
-}
-
-.top h2{
-    color: #243010;
-}
-
-h4{
-    color: #243010;
-}
-
-.h4,
-.p,
-.a,
-.img{
-    opacity: 0;
-    animation-delay: 0.1s;
-}
-
-.p{
-    animation-delay: 0.2s;
-}
-
-.a{
-    animation-delay: 0.4s;
-}
-
-.h4.visible,
-.p.visible,
-.a.visible,
-.img.visible{
-    animation: 0.5s fadeUp forwards;
-}
-
-.top p{
-    opacity: 0;
-    color: #445218;
-    animation-delay: 0.1s;
-}
-
-p{
-    color: #445218;
-}
-
-.form-container{
-    width: 120%;
+.form-container {
+    width: 100%;
 }
 
 .campos,
 .campo,
-.bottom{
+.bottom {
     opacity: 0;
     padding-right: 8%;
-    margin-bottom: 1rem;
+    margin-bottom: 2%;
     animation: 0.5s fadeUp forwards;
     animation-delay: 0.3s;
 }
 
-.campos{
-    margin-top: 3rem;
+.campos {
+    margin-top: 7.5%;
     display: flex;
-    gap: 20px;
+    gap: 3.5%;
 }
 
-.form-control{
+.form-control {
     padding: 0.7rem;
     border-radius: 0.9rem;
     background-color: #f4f5f0;
     border: none;
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
     color: #C0CC9B;
 }
 
-.form-label{
+.form-label {
     color: #243010;
     user-select: none;
 }
 
-.form-check{
+.form-check {
     opacity: 0;
     animation: 0.5s fadeUp forwards;
     animation-delay: 0.3s;
 }
 
-.bottom button{
+.bottom button {
     width: 100%;
     padding: 10px;
     border-radius: 0.9rem;
     border: none;
-    margin-top: 6rem;
+    margin-top: 10%;
     color: #e8e8ed;
     font-weight: bold;
     text-transform: uppercase;
     background-color: #243010;
 }
 
-.bottom button:hover{
+.bottom button:hover {
     background-color: rgba(36, 48, 16, 0.945);
 }
 
-.img-container{
-    width: 100%;
+.img-container {
+    width: 80%;
 }
 
-.form img{
+.form img {
     height: 95%;
     width: 100%;
     object-fit: cover;
@@ -165,62 +120,66 @@ p{
     animation: 0.5s fadeLeft forwards;
 }
 
-.contact-container{
+/* todo: Sessão de Contato */
+.contact-container {
     background-color: #C0CC9B;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     padding: 7rem;
 }
 
-.row{
+.row {
     gap: 3%;
 }
 
-.col{
+.col {
     width: 31.3%;
     padding: 1.3rem;
     border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.76);
 }
 
-.col .top{
+.col .top {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
-.contact-container img{
+.contact-container img {
     width: 55px;
     border-radius: 15px;
 }
 
-.footer{
+/* todo: Rodapé */
+.footer {
     background-color: #111406;
 }
 
-.footer > .container{
+.footer>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
 }
 
-.footer > .container .nav-menu{
+.footer>.container .nav-menu {
     display: flex;
     gap: 0.6rem;
     padding-bottom: 0.6rem;
 }
 
-.footer > .container .nav-menu a,
-.footer > .container p{
+.footer>.container .nav-menu a,
+.footer>.container p {
     color: #C0CC9B;
 }
 
-.footer > .container .nav-menu a:hover{
+.footer>.container .nav-menu a:hover {
     color: #e8e8ed;
 }
 
-@keyframes fadeLeft{
+/* todo: Animações */
+@keyframes fadeLeft {
     0% {
         opacity: 0;
         transform: translateX(30px);
@@ -233,7 +192,7 @@ p{
     }
 }
 
-@keyframes fadeUp{
+@keyframes fadeUp {
     0% {
         opacity: 0;
         transform: translateY(15px);
@@ -245,14 +204,15 @@ p{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1000px){
+/* todo: Media Queries */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
     .footer>.container {
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
     }
 
-    .contact-container{
+    .contact-container {
         padding-left: 1.1rem;
         padding-right: 1.1rem;
     }
@@ -265,17 +225,17 @@ p{
         padding-bottom: 0;
     }
 
-    .h4{
+    .h4 {
         font-size: 1.1rem;
     }
 }
 
-@media screen and (max-width: 800px){
-    .form{
+@media screen and (max-width: 800px) {
+    .form {
         flex-direction: column;
     }
 
-    .form-container{
+    .form-container {
         width: 100%;
     }
 
@@ -285,15 +245,15 @@ p{
         padding-right: 0;
     }
 
-    .container .btn{
+    .container .btn {
         display: block;
     }
 
-    nav > .container{
+    nav>.container {
         position: relative;
     }
 
-    nav > .container .nav-menu{
+    nav>.container .nav-menu {
         position: absolute;
         width: 100%;
         top: 100%;
@@ -301,7 +261,7 @@ p{
         display: none;
     }
 
-    nav > .container .nav-menu ul{
+    nav>.container .nav-menu ul {
         background-color: white;
         padding: 1rem;
         border-top: none;
@@ -309,11 +269,11 @@ p{
         text-align: end;
     }
 
-    .form-container{
+    .form-container {
         margin-bottom: 4rem;
     }
 
-    .contact-container{
+    .contact-container {
         margin-top: 10rem;
         padding-left: 1.1rem;
         padding-right: 1.1rem;
@@ -325,24 +285,24 @@ p{
         font-size: 1.6rem;
     }
 
-    .row{
+    .row {
         gap: 2rem;
     }
 
-    .col{
+    .col {
         width: 100%;
         padding: 2rem;
         padding-left: 1.3rem;
         padding-right: 1.3rem;
     }
 
-    .footer > .container {
+    .footer>.container {
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
     }
 
-    .footer > .container .nav-menu {
+    .footer>.container .nav-menu {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -350,12 +310,18 @@ p{
         padding-bottom: 0;
     }
 
-    .footer > .container .nav-menu a{
+    .footer>.container .nav-menu a {
         color: #C0CC9B;
         transition: 0.4s;
     }
 
     .footer>.container .nav-menu a:hover {
         color: #e8e8ed;
+    }
+}
+
+@media screen and (min-height: 1px) and (max-height: 500px) {
+    .container-form {
+        margin-bottom: 12rem;
     }
 }
