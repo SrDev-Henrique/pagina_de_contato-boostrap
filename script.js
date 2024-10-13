@@ -1,5 +1,5 @@
 // todo: Seleciona os elementos para animar
-const elements = document.querySelectorAll('.h4, .p, .a, .img');
+const elements = document.querySelectorAll('.h4, .h1, .p, .a, .img');
 
 // todo: Função para adicionar animação quando o elemento estiver visível
 const observer = new IntersectionObserver((entries) => {
