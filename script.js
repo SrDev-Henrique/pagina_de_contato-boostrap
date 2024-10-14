@@ -18,6 +18,6 @@ observer.observe(element);
 $(document).ready(function () {
 
     $('.coll').click(function () {
-        $('.nav-menu').slideToggle();
+        $('.top-nav').slideToggle();
     })
 })
